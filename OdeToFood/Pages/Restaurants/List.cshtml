@@ -30,16 +30,29 @@
         <td>@restaurant.Cuisine</td>
         <td>
             <a class="btn btn-default"
-               asp-page="./Detail" 
-               asp-route-restaurantId="@restaurant.Id"              
-               >
-                <i class="fas fa-search-plus"></i>
+               asp-page="./Detail"
+               asp-route-restaurantId="@restaurant.Id">
+                <i class="fa fa-search-plus"></i>
+            </a>
+
+            <a class="btn btn-default"
+               asp-page="./Edit"
+               asp-route-restaurantId="@restaurant.Id">
+                <i class="fa fa-edit"></i>
+            </a>
+
+            <a class="btn btn-lg"
+               asp-page="./Delete"
+               asp-route-restaurantId="@restaurant.Id">
+                <i class="fa fa-trash"></i>
             </a>
         </td>
     </tr>
     }
 
 </table>
+
+<a asp-page="./Edit" class="btn btn-outline-primary">Add New</a>
 
 <div>
     @Model.Message
