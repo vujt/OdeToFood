@@ -5,6 +5,18 @@
     {
       "library": "font-awesome@5.13.1",
       "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "library": "datatables@1.10.20",
+      "destination": "wwwroot/lib/datatables/"
+    },
+    {
+      "library": "datatables.net@2.1.1",
+      "destination": "wwwroot/datatables.net/"
+    },
+    {
+      "library": "jqueryui@1.12.1",
+      "destination": "wwwroot/lib/jqueryui/"
     }
   ]
 }
