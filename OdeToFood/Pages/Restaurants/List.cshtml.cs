@@ -17,7 +17,7 @@ namespace OdeToFood.Pages.Restaurants
         public IEnumerable<Restaurant> Restaurants { get; set; }
         
         [BindProperty(SupportsGet =true)]
-        public string SearchTeam { get; set; }
+        public string SearchTerm { get; set; }
         public string Message { get; set; }
 
         public ListModel(IConfiguration config, 
@@ -30,7 +30,7 @@ namespace OdeToFood.Pages.Restaurants
         public void OnGet()
         {            
             Message = config["Message"];
-            Restaurants = restaurantData.GetRestaurantsByName(SearchTeam);
+            Restaurants = restaurantData.GetRestaurantsByName(SearchTerm);
         }
     }
 }
